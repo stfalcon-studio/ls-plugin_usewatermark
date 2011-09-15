@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+    <name>
+        <lang name="default">Use Watermark</lang>
+    </name>
+    <author>
+        <lang name="default">Web-studio stfalcon.com</lang>
+    </author>
+    <homepage>http://stfalcon.com</homepage>
+    <version>0.1.1</version>
+    <requires>
+        <livestreet>0.4.2</livestreet>
+    </requires>
+    <description>
+        <lang name="default">The user can choose to use watermark or not</lang>
+        <lang name="russian">Пользователь может использовать ватермарк по желанию</lang>
+        <lang name="ukrainian">Користувач може вибирати використовувати ватермарк чи ні</lang>
+    </description>
+</plugin>
+
