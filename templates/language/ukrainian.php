@@ -16,7 +16,7 @@
  * Ukrainian Language file
  */
 return array(
-    'usewatermark_add_label' => 'Накладати водяний знак на зображення'
-
+    'usewatermark_add_label' => 'Накладати водяний знак на зображення',
+	'round_corner_label' => 'Rounded corners'
 );
 

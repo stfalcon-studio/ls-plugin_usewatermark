@@ -22,8 +22,9 @@ class PluginUsewatermark_HookUseWatermark extends Hook
      */
     public function RegisterHook() {
         $this->AddHook('engine_init_complete', 'AddWatermark');
-
+		$this->AddHook('engine_init_complete', 'RoundConers');
         $this->AddHook('template_uploadimg_source', 'AddWatermarkOption');
+		$this->AddHook('template_uploadimg_source', 'AddRoundConersOption');
     }
 
     /**
@@ -40,9 +41,26 @@ class PluginUsewatermark_HookUseWatermark extends Hook
             Config::Set('module.image.default.watermark_use', false);
             Config::Set('module.image.topic.watermark_use', false);
             Config::Set('module.image.foto.watermark_use', false);
+			Config::Set('module.image.avatar.watermark_use', false);			
         }
     }
 
+    /**
+     * Round corners of Image
+     *
+     * @param array $aData
+     * @return void
+     */
+    public function RoundConers($aData) {
+        if (getRequest('round_corner')) {
+        } else {
+            Config::Set('module.image.default.round_corner', false);
+            Config::Set('module.image.topic.round_corner', false);
+            Config::Set('module.image.foto.round_corner', false);
+			Config::Set('module.image.avatar.round_corner', false);	
+        }
+    }
+	
     /**
      * Добавляет в шаблон загрузчика изображения опцию наложения водяного знака
      *
@@ -53,6 +71,15 @@ class PluginUsewatermark_HookUseWatermark extends Hook
         return $this->Viewer_Fetch(Plugin::GetTemplatePath(__CLASS__) . 'window_load_img.wattermark.tpl');
     }
 
+    /**
+     * Добавляет в шаблон загрузчика изображения опцию скругления углов
+     *
+     * @return type
+     */
+    public function AddRoundConersOption() {
+
+        return $this->Viewer_Fetch(Plugin::GetTemplatePath(__CLASS__) . 'window_load_img.round.tpl');
+    }
 }
 
 ?>

@@ -13,7 +13,7 @@
     </requires>
     <description>
         <lang name="default">The user can choose to use watermark or not</lang>
-        <lang name="russian">Пользователь может использовать ватермарк по желанию</lang>
+        <lang name="russian">Пользователь может использовать ватермарк по желанию. Добавлена опция скругления углов - by Wise</lang>
         <lang name="ukrainian">Користувач може вибирати використовувати ватермарк чи ні</lang>
     </description>
 </plugin>
