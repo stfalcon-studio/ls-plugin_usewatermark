@@ -16,7 +16,7 @@
  * Russian Language file
  */
 return array(
-    'usewatermark_add_label' => 'Накладывать водяной знак на картинку'
-
+    'usewatermark_add_label' => 'Накладывать водяной знак на картинку',
+	'round_corner_label' => 'Скруглять углы'
 );
 

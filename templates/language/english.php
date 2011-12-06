@@ -16,6 +16,7 @@
  * English Language file
  */
 return array(
-    'usewatermark_add_label' => 'Add watermark to image'
+    'usewatermark_add_label' => 'Add watermark to image',
+	'round_corner_label' => 'Rounded corners'
 );
 

@@ -28,6 +28,8 @@
 
 Config::Set('module.image.foto.watermark_use', false);
 Config::Set('module.image.topic.watermark_use', true);
+Config::Set('module.image.foto.round_corner', false);
+Config::Set('module.image.topic.round_corner', true);
 
 $config = array(
     'backup_original' => 1, //делаеть ли бекап оригинала картинки 0/1
