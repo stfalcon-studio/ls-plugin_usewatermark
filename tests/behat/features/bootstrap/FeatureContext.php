@@ -125,5 +125,12 @@ class FeatureContext extends MinkContext
         }
     }
 
-
+    /**
+     * @When /^I put the file "([^"]*)" to "([^"]*)"$/
+     */
+    public function iPutTheFileTo($fileName, $path)
+    {
+        $fullPath = dirname(realpath((dirname(__FILE__)) . "/../../"))  . '/fixtures/image/' . $fileName;
+        $this->attachFileToField($path, $fullPath);
+    }
 }
