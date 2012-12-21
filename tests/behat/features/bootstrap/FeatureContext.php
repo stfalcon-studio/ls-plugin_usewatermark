@@ -49,20 +49,6 @@ class FeatureContext extends MinkContext
     }
 
     /**
-     * @Then /^I fill event by css "([^"]*)" values "([^"]*)"$/
-     */
-    public function iFillElementByValues($css, $value)
-    {
-        $element = $this->getSession()->getPage()->find('css', $css );
-        if ($element) {
-            $this->getSession()->executeScript("$(\"$css\").val(\"{$value}\")");
-        }
-        else {
-            throw new ExpectationException('Button not found', $this->getSession());
-        }
-    }
-
-    /**
      * @Then /^I check the image$/
      */
     public function iCheckTheImage()
